@@ -1,0 +1,55 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<div class="container" style="width: 100%; background: #ededed;padding: 30px">
+    <div class="row">
+        <div id="mainNav" class="clearfix f_l">
+            <a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if}>
+                {$lang.home}<span></span></a>
+            <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+            <a href="{$nav.url}" target="_blank"{if $nav.opennew eq 1} {/if} {if $nav.active eq 1} class="cur"{/if}>
+                {$nav.name}<span></span></a>
+            <!-- {/foreach} -->
+        </div>
+        <!--search start-->
+        <div id="search"  class="clearfix f_r">
+            <div class="keys f_l">
+                <script type="text/javascript">
+                    {literal}
+                    <!--
+                    function checkSearchForm()
+                    {
+                        if(document.getElementById('keyword').value)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            alert("{$lang.no_keywords}");
+                            return false;
+                        }
+                    }
+                    -->
+                    {/literal}
+                </script>
+                {if $searchkeywords}
+                    {$lang.hot_search} ：
+                    {foreach from=$searchkeywords item=val}
+                        <a href="search.php?keywords={$val|escape:url}">{$val}</a>
+                    {/foreach}
+                {/if}
+            </div>
+            <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" class="f_r" >
+                <select name="category" id="category" class="B_input">
+                    <option value="0">{$lang.all_category}</option>
+                    {$category_list}
+                </select>
+                <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="B_input" style="width:110px;height:20px;"/>
+                <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
+                <a href="search.php?act=advanced_search">{$lang.advanced_search}</a>
+            </form>
+        </div>
+        <!--search end-->
+    </div>
+</div>

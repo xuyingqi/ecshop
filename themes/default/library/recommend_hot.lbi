@@ -1,0 +1,33 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $hot_goods} -->
+<!-- {if $cat_rec_sign neq 1} -->
+    <div class="container box-4 hot-goods">
+        <div class="row">
+            <div class="title">热卖商品</div>
+        </div>
+        <div id="show_hot_area" class="clearfix row goodsBox">
+            <!-- {/if} -->
+            <!--{foreach from=$hot_goods item=goods}-->
+            <div class="col-md-3 box f_l" >
+                <img src="{$goods.thumb}" alt="{$goods.name|escape:html}"/><br />
+                <div class="info">
+                    <h6>{$goods.short_style_name}</h6>
+                    <p>{$goods.brief}</p>
+                </div>
+                <p class="price">
+                    <!-- {if $goods.promote_price neq ""} -->
+                    {$goods.promote_price}
+                    <!-- {else}-->
+                    {$goods.shop_price}
+                    <!--{/if}-->
+                </p>
+                <a href="{$goods.url}" target="_blank"></a>
+            </div>
+            <!--{/foreach}-->
+            <div class="more"><a href="../search.php?intro=hot"><img src="images/more.gif" /></a></div>
+            <!-- {if $cat_rec_sign neq 1} -->
+        </div>
+    </div>
+    <div class="blank5"></div>
+<!-- {/if} -->
+<!-- {/if} -->

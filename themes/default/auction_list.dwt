@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link  href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #footer{
+            padding-top: 81px;
+            width: 100%;
+            height: 100%;
+            background: url(images/img_index/bg7footer.png) no-repeat center center;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="footer">
+    <div class="footer-wrapper">
+        <img src="images/img_index/logo_max.png" alt="">
+        <p>公司名称:宗医堂生物科技有限公司</p>
+        <p>联系电话:{$service_phone}</p>
+        <p>邮箱:{$service_email}</p>
+        <img src="../images/img_index/QR_code.png" alt="">
+        <p>网址:{$lang.icp_number}</p>
+        <p>地址:{$shop_address} </p>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        window.__Object_toJSONString = Object.prototype.toJSONString;
+        delete Object.prototype.toJSONString;
+    });
+</script>
+</body>
+</html>

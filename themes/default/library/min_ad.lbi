@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $best_goods} -->
+<!-- {if $cat_rec_sign neq 1} -->
+<div class="container  box-4 ad-min">
+    <!-- {/if} -->
+    <div class="row">
+    <!--{foreach name=min_ad from=$best_goods item=goods}-->
+    {if $smarty.foreach.min_ad.iteration <5}
+    <div class="col-md-3 box">
+        <img src="{$goods.thumb}" alt="{$goods.name|escape:html}" style="width:150px;height:150px;"/><br />
+        <a href="{$goods.url}" target="_blank"></a>
+    </div>
+    {/if}
+    <!--{/foreach}-->
+    </div>
+</div>
+<!-- {/if} -->

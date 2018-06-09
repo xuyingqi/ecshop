@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--版权 start-->
+<div id="footer">
+   <div class="footer-wrapper">
+       <img src="images/img_index/logo_max.png" alt="">
+       <p>公司名称:宗医堂生物科技有限公司</p>
+       <p>地址:{$shop_address} </p>
+       <p>邮箱:{$service_email}</p>
+       <p>联系电话:{$service_phone}</p>
+       <p>网址:{$lang.icp_number}</p>
+       <img src="../images/img_index/QR_code.png" alt="">
+   </div>
+</div>
+
+

@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $pictures}-->
+ <div class="clearfix col-md-3">
+      <div class="gallery">
+        <div id="demo">
+          <div id="demo1">
+            <ul>
+              <!-- {foreach from=$pictures item=picture}-->
+              <li>
+                <a href="gallery.php?id={$id}&img={$picture.img_id}" target="_blank">
+                  <img src="{if $picture.thumb_url}{$picture.img_url}{else}{$picture.img_url}{/if}"
+                    alt="{$goods.goods_name}" onmouseOver="change_img(this.src)" />
+                </a>
+              </li>
+              <!--{/foreach}-->
+            </ul>
+          </div>
+          <div id="demo2"></div>
+        </div>
+      </div>
+     </div>
+<!-- {/if}-->

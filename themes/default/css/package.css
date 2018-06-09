@@ -1,0 +1,176 @@
+/*catalog*/
+
+@font-face {
+    /* font-properties */
+    font-family: ywsf;
+    src: url('../ttf/yuweishufa.ttf'); /* IE9 */
+}
+.section{
+    width: 100%;
+    height: auto;
+    background: url(../images/img_index/bg.png) no-repeat center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+.section-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+.section .title{
+    margin: 0 auto;
+    padding: 100px 0 19px 0;
+}
+.section .title h3{
+    font-size: 36px;
+    font-family: ywsf;
+    text-align: center;
+}
+.section .title h3 span{
+    font-size: 24px;
+    font-family: ywsf;
+    padding-left: 30px;
+
+}
+.community-info{
+    width: 1170px;
+    font-size: 20px;
+    font-family: ywsf;
+    text-align: center;
+    margin: 80px auto 0;
+
+}
+.community-wrapper{
+    width: 1170px;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+.community-wrapper img{
+    max-height:400px;
+    float: left;
+    margin: 0 5px 0 0;
+}
+.community-wrapper h4{
+    font-size: 28px;
+    font-family: ywsf;
+}
+.community-wrapper p,.community-wrapper span{
+    font-size: 20px;
+   font-family: ywsf;
+}
+/*第一页*/
+a,img{border:0;}
+/* demo */
+/*五张图片在缩略图时所显示的位置调整*/
+#demo li:nth-of-type(1) img{ transform: translate(-210px);}
+#demo li:nth-of-type(2) img{ transform: translate(-180px);}
+#demo li:nth-of-type(3) img{ transform: translate(-380px);}
+#demo li:nth-of-type(4) img{ transform: translate(-450px);}
+#demo li:nth-of-type(5) img{ transform: translate(-320px);}
+#demo{width:1160px;height:512px;margin:60px auto 0 auto;}
+#demo img{width: 820px; height: 512px; max-width: 820px;}
+#demo li{float:left;position:relative;width:82px;height:100%;overflow:hidden;cursor:pointer; transition:0.5s; transform-origin:bottom;filter:alpha(opacity=50);opacity:0.5;}
+#demo li img{transition:1.2s;}
+#demo li a{display:block;}
+/*#demo li div{position:absolute;bottom:0;left:0;width:100%;background:#000;line-height:32px;filter:alpha(opacity=70);opacity:0.7;text-indent:2em;}
+#demo li div a{color:#FFF;text-decoration:none;}
+#demo li div a:hover{color:#F00;text-decoration:none;}*/
+#demo li.active{cursor:pointer; transform:scale(1.02,1.08); z-index:3;width:820px;filter:alpha(opacity=100);opacity:1;}
+#demo li.active img{transform:translate(0px);}
+#demo li:nth-of-type(1){transform-origin:bottom left;}
+#demo li:nth-of-type(5){transform-origin:bottom right;}
+/*第二页*/
+
+/*第四页*/
+.section:nth-of-type(4) h4{
+    font-size: 30px;
+}
+.section:nth-of-type(4) span{
+    font-size: 20px;
+}
+
+.pic-wrapper{
+    width: 1170px;
+    height: 550px;
+    margin: 0 0 0 100px;
+    position: relative;
+}
+.pic-wrapper img{
+    padding: 10px 10px 15px;
+    background: #ccc;
+    border:1px solid #ddd;
+    position: absolute;
+    transition: all .5s;
+    max-height:300px;
+}
+.pic-wrapper img:hover{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    /*水平方向、竖直方向、阴影距离、颜色*/
+    box-shadow: 10px 10px 15px #999;
+    z-index: 10;
+}
+.pic1{
+    top: 50px;
+    left: 20px;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+}
+.pic2{
+    top: 50px;
+    left:220px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    z-index: 2;
+}
+.pic3{
+    top: 50px;
+    left: 440px;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+}
+.pic4{
+    top: 50px;
+    left: 660px;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+}
+.pic5{
+    top: 200px;
+    left: 20px;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    z-index: 5;
+}
+.pic6{
+    top: 200px;
+    left: 220px;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    z-index: 6;
+}
+.pic7{
+    top: 200px;
+    left: 440px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    z-index: 8;
+}
+.pic8{
+    top: 200px;
+    left: 660px;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+}

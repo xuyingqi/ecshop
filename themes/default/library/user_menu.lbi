@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="userMenu">
+<a href="javascript:void(0)" style="padding: 0;background-color: #e6e6e6;"><img src="../images/img/default-user-avatar.png" alt=""></a>
+<a href="user.php" {if $action eq 'default'}class="curs"{/if}>
+   {$lang.label_welcome}</a>
+<a href="user.php?act=profile"{if $action eq 'profile'}class="curs"{/if}>
+   {$lang.label_profile}</a>
+<a href="user.php?act=order_list"{if $action eq 'order_list'|| $action eq 'order_detail'}class="curs"{/if}>
+    {$lang.label_order}</a>
+<a href="user.php?act=address_list"{if $action eq 'address_list'}class="curs"{/if}>
+    {$lang.label_address}</a>
+<a href="user.php?act=message_list"{if $action eq 'message_list'}class="curs"{/if}>
+    {$lang.label_message}</a>
+<a href="user.php?act=bonus"{if $action eq 'bonus'}class="curs"{/if}>
+    {$lang.label_bonus}</a>
+<a href="user.php?act=comment_list"{if $action eq 'comment_list'}class="curs"{/if}>
+    {$lang.label_comment}</a>
+<!--<a href="user.php?act=group_buy">{$lang.label_group_buy}</a>-->
+<a href="user.php?act=track_packages"{if $action eq 'track_packages'}class="curs"{/if}>
+    {$lang.label_track_packages}</a>
+<a href="user.php?act=account_log"{if $action eq 'account_log'}class="curs"{/if}>
+    {$lang.label_user_surplus}</a>
+<!--{if $show_transform_points}-->
+<a href="user.php?act=transform_points"{if $action eq 'transform_points'}class="curs"{/if}>
+    {$lang.label_transform_points}</a>
+<!--{/if}-->
+<a href="user.php?act=logout"><img src="../images/bnt_sign.gif"></a>
+</div>
